@@ -6,10 +6,10 @@ const app = express();
 app.use(express.json());
 
 const client = new GraphQLClient(
-    '<your_GraphCMS_URL>',
+    process.env.GRAPHCMS_ENDPOINT,
     {
         headers: {
-            authorization: 'Bearer <your_bearer_token>',
+            authorization: `Bearer ${process.env.BEARER}`,
         }
     }
 );

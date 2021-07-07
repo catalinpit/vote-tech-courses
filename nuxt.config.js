@@ -33,6 +33,7 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/dotenv'
   ],
 
   serverMiddleware: ['~/server-middleware/upvoteCourse.js']
